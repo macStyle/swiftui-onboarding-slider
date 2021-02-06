@@ -1,9 +1,10 @@
 //
-//  SceneDelegate.swift
+//  ContentView.swift
 //  Onboarding
 //
-//  Created by Augustinas Malinauskas on 06/07/2020.
-//  Copyright © 2020 Augustinas Malinauskas. All rights reserved.
+//
+//  Created by Med Jemni on 2/6/21.
+//
 //
 
 import UIKit

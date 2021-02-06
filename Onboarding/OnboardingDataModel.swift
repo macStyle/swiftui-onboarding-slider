@@ -1,9 +1,10 @@
 //
-//  OnboardingModel.swift
+//  ContentView.swift
 //  Onboarding
 //
-//  Created by Augustinas Malinauskas on 06/07/2020.
-//  Copyright © 2020 Augustinas Malinauskas. All rights reserved.
+//
+//  Created by Med Jemni on 2/6/21.
+//
 //
 
 import Foundation
@@ -16,10 +17,10 @@ struct OnboardingDataModel {
 
 extension OnboardingDataModel {
     static var data: [OnboardingDataModel] = [
-        OnboardingDataModel(image: "onboarding-relax", heading: "Welcome to App", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-        OnboardingDataModel(image: "onboarding-lookingatart", heading: "Explore the World", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-        OnboardingDataModel(image: "onboarding-sharing1", heading: "Live Life Baby", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-        OnboardingDataModel(image: "onboarding-security1", heading: "Work Hard", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-        OnboardingDataModel(image: "onboarding-showclients", heading: "Stay Careless", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
+        OnboardingDataModel(image: "onboarding1", heading: "EXPLORE", text: "Infinite number of trends and challenges"),
+        OnboardingDataModel(image: "onboarding2", heading: "VOTE", text: "Vote for other users by liking their pictures and videos"),
+        OnboardingDataModel(image: "onboarding3", heading: "Play the Game", text: "Take your chance and be part of the game!"),
+       
+//        OnboardingDataModel(image: "onboarding-showclients", heading: "Stay Careless", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
     ]
 }

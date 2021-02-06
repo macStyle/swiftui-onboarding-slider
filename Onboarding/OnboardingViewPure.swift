@@ -1,9 +1,10 @@
 //
-//  OnboardingViewPure.swift
+//  ContentView.swift
 //  Onboarding
 //
-//  Created by Augustinas Malinauskas on 06/07/2020.
-//  Copyright © 2020 Augustinas Malinauskas. All rights reserved.
+//
+//  Created by Med Jemni on 2/6/21.
+//
 //
 
 import SwiftUI
@@ -82,12 +83,13 @@ struct OnboardingViewPure: View {
         Group {
             if self.curSlideIndex == self.data.count - 1 {
                 HStack {
-                    Text("Done")
-                        .font(.system(size: 27, weight: .medium, design: .rounded))
-                        .foregroundColor(Color(.systemBackground))
+                    Text("Start")
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        
+                        .foregroundColor(Color(.label))
                 }
                 .frame(width: 120, height: 50)
-                .background(Color(.label))
+                .background(LinearGradient(gradient: Gradient(colors: [Color("Red1"), Color("Red2")]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
                 .cornerRadius(25)
             } else {
                 Image(systemName: "arrow.right.circle.fill")
@@ -105,7 +107,7 @@ struct OnboardingViewPure: View {
                 Circle()
                     .scaledToFit()
                     .frame(width: 10)
-                    .foregroundColor(self.curSlideIndex >= i ? Color(.systemIndigo) : Color(.systemGray))
+                    .foregroundColor(self.curSlideIndex >= i ? Color("Red1") : Color(.label))
             }
         }
     }
@@ -116,5 +118,6 @@ struct OnboardingViewPure_Previews: PreviewProvider {
     static let sample = OnboardingDataModel.data
     static var previews: some View {
         OnboardingViewPure(data: sample, doneFunction: { print("done") })
+//            .preferredColorScheme(.dark)
     }
 }
